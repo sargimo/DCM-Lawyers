@@ -4,8 +4,8 @@ if ( !function_exists('dcm_create_post_types')) :
         register_post_type(
             'practice-areas',
             array('labels' => array(
-                'name' => __('Practice Areas hehe'),
-                'singular_name' => __('Practice Area hehe')
+                'name' => __('Practice Areas'),
+                'singular_name' => __('Practice Area')
             ),
             'public' => true,
             // 'has_archive' => true,

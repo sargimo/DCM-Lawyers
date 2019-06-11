@@ -88,3 +88,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once( ABSPATH . 'wp-settings.php' );
+
+//debugging
+define('WP_DEBUG', true);
+
+//ftp permissions
+define('FS_METHOD','direct');

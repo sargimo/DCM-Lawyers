@@ -84,5 +84,3 @@ if ( !function_exists('dcm_setup')) :
 
 endif;
 add_action('after_setup_theme', 'dcm_setup');
-
-
