@@ -61,6 +61,11 @@
 //  55. Top Bar
 //  56. Xy Grid
 
+//  -----------
+
+//  57. DCM Colours
+//  58. DCM Fonts
+//  59. DCM Page Spacing
 @import 'util/util';
 @import 'global/colors';
 
@@ -868,3 +873,25 @@ $grid-padding-gutters: $grid-margin-gutters;
 $grid-container-padding: $grid-padding-gutters;
 $grid-container-max: $global-width;
 $xy-block-grid-max: 8;
+
+// 57. DCM Colours
+// ---------------
+
+$dcm-black: #222222;
+$dcm-grey: #a9a9a9;
+$dcm-primary-colour: #ee8434;
+$dcm-secondary-colour: #00426d;
+
+// 58. DCM fonts
+// -------------
+
+$dcm-primary-font: 'Montserrat', sans-serif;
+$dcm-body-font: 'Crimson Text', serif;
+$dcm-title-letter-spacing: 0.05em;
+
+//59. DCM page spacing
+// -------------------
+
+$dcm-section-padding: 100px;
+$dcm-paragraph-padding: 16px;
+

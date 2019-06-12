@@ -21,3 +21,42 @@
     padding: 0;
   }
 }
+
+.dcm-footer-middle {
+  background-color: $dcm-black;
+  color: #fff;
+  text-align: center;
+  font-family: $dcm-primary-font;
+  font-size: 14px;
+  padding: 25px 0;
+  i {
+    color: $dcm-primary-colour;
+    padding-right: 5px;
+    font-size: 18px;
+  }
+  p {
+    margin: 0;
+    padding: 10px 0;
+  }
+  .dcm-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.dcm-footer-bottom {
+  width: 100vw;
+  color: #fff;
+  padding: 8px 0;
+  background-color: $dcm-secondary-colour;
+  font-size: 14px;
+  font-family: $dcm-primary-font;
+  p {
+    margin: 0;
+  }
+  .dcm-footer-author {
+    text-align: right;
+  }
+}
