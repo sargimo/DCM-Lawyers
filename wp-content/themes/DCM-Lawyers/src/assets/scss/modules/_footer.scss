@@ -25,14 +25,15 @@
 .dcm-footer-middle {
   background-color: $dcm-black;
   color: #fff;
-  text-align: center;
+  text-align: left;
   font-family: $dcm-primary-font;
   font-size: 14px;
-  padding: 25px 0;
+  padding: 15px 0;
+
   i {
     color: $dcm-primary-colour;
-    padding-right: 5px;
-    font-size: 18px;
+    padding-right: 15px;
+    font-size: 22px;
   }
   p {
     margin: 0;
@@ -42,6 +43,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+  }
+  .dcm-footer-item {
+    display: flex;
     align-items: center;
   }
 }

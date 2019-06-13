@@ -4,6 +4,7 @@
     #menu-practice-areas {
         list-style : none;
         padding-left: 0;
+        margin: 0;
         li {
             padding-bottom: 5px;
         }
@@ -13,6 +14,9 @@
         }
         a:hover {
             color: $dcm-black;
+        }
+        ul {
+            margin: 0;
         } 
     }
     h3 {

@@ -1,6 +1,4 @@
-<div class="grid-container dcm-nav">
-    <?php get_header(); ?>
-</div>
+<?php get_header(); ?>
 <div class="grid-container fluid home-hero">
     <div class="grid-container">
         <h1>PLAIN ENGLISH ADVICE, TAILORED JUST FOR YOU</h1>

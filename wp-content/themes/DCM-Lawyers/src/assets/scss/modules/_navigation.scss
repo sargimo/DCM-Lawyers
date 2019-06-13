@@ -27,9 +27,9 @@
   float:right;
 }
 
-.dcm-nav {
-  padding: 0;
-}
+// .dcm-nav {
+//   padding: 0;
+// }
 
 .top-bar {
   padding: 16px;
@@ -38,11 +38,17 @@
 .top-bar, .top-bar ul {
   background-color: #fff;
 }
+
+.top-bar-right {
+  align-self: flex-end;
+}
+
 .site-header {
   position: fixed;
   width: 100vw;
   left: 0;
   top: 0;
+  background-color: #fff;
 }
 
 #menu-primary {
@@ -52,18 +58,11 @@
       color: $dcm-black;
       text-transform: uppercase;
       font-size: 14px;  
-      padding: 16px 26px;
+      padding: 5px 26px;
     }
     a:hover {
       border-bottom: 1px solid $dcm-primary-colour;
       color: $dcm-primary-colour;
-    }
-  }
-  :nth-of-type(5) {
-    border: 2px solid $dcm-primary-colour;
-    background-color: $dcm-primary-colour;
-    a {
-      color: #fff;
     }
   }
 }

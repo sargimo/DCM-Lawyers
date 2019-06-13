@@ -24,7 +24,7 @@ if ( !function_exists('dcm_create_post_types')) :
             'public' => true,
             // 'has_archive' => true,
             'menu_position' => 5,
-            'supports' => array('thumbnail', 'title', 'editor'),
+            'supports' => array('thumbnail', 'title', 'editor', 'excerpt'),
             // 'taxonomies' => array('categories', 'post_tag')
             // 'register_meta_box_cb' => 'wine_post_class_meta_box'
         ));
