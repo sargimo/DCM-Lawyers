@@ -26,7 +26,7 @@ if ( !function_exists('dcm_create_post_types')) :
             'menu_position' => 5,
             'supports' => array('thumbnail', 'title', 'editor', 'excerpt'),
             // 'taxonomies' => array('categories', 'post_tag')
-            // 'register_meta_box_cb' => 'wine_post_class_meta_box'
+            // 'register_meta_box_cb' => 'dcm_post_class_meta_box'
         ));
     }
 endif;

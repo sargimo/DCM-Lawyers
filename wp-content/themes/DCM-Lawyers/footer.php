@@ -8,6 +8,8 @@
  * @since FoundationPress 1.0.0
  */
 ?>
+<!-- closes div from main content padding -->
+</div>
 <footer>
 	<div class="grid-container fluid">
 		<div class="dcm-footer-map">

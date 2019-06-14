@@ -24,6 +24,43 @@
         endif; ?>
     </div>
 </div>
+<div class="grid-container dcm-home-team">
+    <h2>THE TEAM</h2>
+    <div class="grid-x">
+        <?php
+        /**
+        * Setup query to show the ‘services’ post type with ‘8’ posts.
+        * Output is title with excerpt.
+        */
+        $args = array(  
+            'post_type' => 'team',
+            'post_status' => 'publish',
+            'posts_per_page' => 8,
+        );
+
+        $loop = new WP_Query( $args );
+            
+        while ( $loop->have_posts() ) : $loop->the_post();
+        ?>
+        <div class="dcm-home-team-item cell medium-4 small-12">
+            <div class="dcm-team-thumbnail">
+                <?php
+                print the_post_thumbnail();
+                ?>
+            </div>
+            <div class="dcm-team-title">
+            <h3>
+            <?php
+                print the_title();
+            ?>
+            </h3>
+            </div>
+        </div>
+    <?php
+   endwhile;
+
+   wp_reset_postdata();
+?></div></div>
 
 <?php
 get_footer();

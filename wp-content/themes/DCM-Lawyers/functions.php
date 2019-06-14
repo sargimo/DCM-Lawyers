@@ -79,7 +79,6 @@ if ( !function_exists('dcm_setup')) :
         //set the permalink structure
         // global $wp_rewrite;
         // $wp_rewrite->set_permalink_structure('/%postname%/');
-
     }
 
 endif;
@@ -101,4 +100,6 @@ function dcm_widgets_init() {
 
 }
 add_action( 'widgets_init', 'dcm_widgets_init' );
+
+
 

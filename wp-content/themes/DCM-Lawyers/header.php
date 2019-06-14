@@ -55,3 +55,5 @@
 			</nav>
 		</div>
 	</header>
+	<!-- to handle fixed navigation padding for the rest of conteint -->
+	<div class="dcm-paddington-bear">
