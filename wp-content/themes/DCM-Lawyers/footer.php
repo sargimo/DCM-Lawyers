@@ -11,9 +11,7 @@
 <!-- closes div from main content padding -->
 </div>
 <footer>
-	<div class="grid-container fluid">
-		<div class="dcm-footer-map">
-		</div>
+	<div class="grid-container fluid dcm-footer-map">
 	</div>
 	<div class="grid-container fluid dcm-footer-middle">
 		<div class="grid-container dcm-flex">

@@ -21,12 +21,6 @@
     padding-bottom: $dcm-section-padding;
     font-size: 18px;
     font-family: $dcm-body-font;
-    h2 {
-        font-size: 32px;
-        text-transform: uppercase;
-        letter-spacing: $dcm-title-letter-spacing;
-        padding-bottom: $dcm-paragraph-padding;
-    }
     p {
         padding-right: 100px;
     }
@@ -40,23 +34,31 @@
 }
 
 .dcm-home-team {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // text-align: center;
+    font-family: $dcm-primary-font;
+    text-align: center;
+    color: $dcm-black;
+    a {
+        color: $dcm-black;
+    }
     h2 {
-        font-size: 32px;
-        text-transform: uppercase;
-        letter-spacing: $dcm-title-letter-spacing;
-        padding-bottom: $dcm-paragraph-padding;
+        padding-top: $dcm-section-padding;
+        text-align: center;
     }
     .dcm-home-team-item {
         // display: block;
+        font-family: $dcm-primary-font;
         padding: $dcm-paragraph-padding 0;
+    }
+    .dcm-team-title h3 {
+        font-family: $dcm-primary-font;
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: $dcm-section-padding;
     }
     .dcm-team-thumbnail img {
         max-width: 250px;
         height: 250px;
         border-radius: 50%;
+        padding-bottom: $dcm-paragraph-padding;
     }
 }

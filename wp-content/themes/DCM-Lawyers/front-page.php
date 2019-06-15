@@ -7,7 +7,7 @@
 <div class="grid-container">
     <div class="grid-x dcm-home-about">
         <div class="cell medium-9">
-            <h2>Insert Title</h2>
+            <h2 class="dcm-section-header">Insert Title</h2>
             <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ligula est, pellentesque a enim vel, sagittis pharetra lacus. Praesent a sapien lectus. Morbi at nisl nec nisi laoreet consequat ut et urna. Quisque at quam magna. Aliquam eu velit massa.
             <span class="dcm-more-text">more about us</span>
@@ -25,7 +25,7 @@
     </div>
 </div>
 <div class="grid-container dcm-home-team">
-    <h2>THE TEAM</h2>
+    <h2 class="dcm-section-header">THE TEAM</h2>
     <div class="grid-x">
         <?php
         /**
@@ -41,19 +41,24 @@
         $loop = new WP_Query( $args );
             
         while ( $loop->have_posts() ) : $loop->the_post();
+        // $link = get_permalink();
         ?>
         <div class="dcm-home-team-item cell medium-4 small-12">
             <div class="dcm-team-thumbnail">
+                <a href="<?php echo get_permalink()?>">
                 <?php
                 print the_post_thumbnail();
                 ?>
+                </a>
             </div>
             <div class="dcm-team-title">
+            <a href="<?php echo get_permalink()?>">
             <h3>
             <?php
                 print the_title();
             ?>
             </h3>
+            </a>
             </div>
         </div>
     <?php
