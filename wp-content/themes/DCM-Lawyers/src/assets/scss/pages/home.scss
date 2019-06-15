@@ -11,6 +11,11 @@
         font-size: 3.5em;
         max-width: 50%;
     }
+    .hero-hr {
+        max-width: 50%;
+        margin: 0;
+        margin-bottom: $dcm-paragraph-padding;
+    }
 }
 
 
@@ -23,6 +28,10 @@
     font-family: $dcm-body-font;
     p {
         padding-right: 100px;
+    }
+    .dcm-more-text, a {
+        color: $dcm-primary-colour;
+        text-align: right;
     }
 }
 

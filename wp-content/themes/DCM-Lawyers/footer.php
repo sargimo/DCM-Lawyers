@@ -12,6 +12,7 @@
 </div>
 <footer>
 	<div class="grid-container fluid dcm-footer-map">
+		<a href="https://goo.gl/maps/h61CaaP79K1wV9vp9" target="_blank"><button class="dcm-footer-btn">12 COLLINS STREET, MELBOURNE</button></a>
 	</div>
 	<div class="grid-container fluid dcm-footer-middle">
 		<div class="grid-container dcm-flex">

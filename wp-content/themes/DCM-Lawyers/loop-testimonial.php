@@ -4,8 +4,6 @@
 echo "<div class=\"slide slide{$slide_count} testimonial_rotator_slide hreview itemreviewed item {$has_image} cf-tr\">\n";		
 ?>
 
-<h2 class="dcm-home-testimonials-header">"</h2>
-
 <?php
 // RATING
 if( $rating AND $show_stars )
