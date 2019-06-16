@@ -16,6 +16,17 @@
         margin: 0;
         margin-bottom: $dcm-paragraph-padding;
     }
+    .hero-buttons {
+        padding-top: 10px;
+        max-width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .dcm-btn {
+        display: flex;
+        align-items: center;
+    }
 }
 
 
@@ -28,6 +39,10 @@
     font-family: $dcm-body-font;
     p {
         padding-right: 100px;
+    }
+    .emphasis {
+        color: $dcm-secondary-colour;
+        font-weight: 700;
     }
     .dcm-more-text, a {
         color: $dcm-primary-colour;

@@ -4,19 +4,14 @@
         <h1>PLAIN ENGLISH ADVICE, TAILORED JUST FOR YOU</h1>
         <hr class="hero-hr">
         <div class="hero-buttons">
-            <button class="dcm-btn dcm-btn-grow">
-                <div class="square">
-                <span class="icon arrow"></span>
-                </div>
-                <p class="button-text">WHO ARE WE?</p>
-            </button>
-            <button class="dcm-btn dcm-btn-grow">
-                <div class="square">
-                <span class="icon arrow"></span>
-                </div>
-                <p class="button-text">TALK TO US</p>
-            </button>
-
+        <div class="dcm-btn">
+            <p class="btn-line">-</p>
+            <button>WHO ARE WE?</button>
+        </div>
+        <div class="dcm-btn">
+            <p class="btn-line">-</p>
+            <button>TALK TO US</button>
+        </div>
         </div>
     </div>
 </div>
@@ -24,7 +19,7 @@
     <div class="grid-x dcm-home-about">
         <div class="cell medium-9">
             <h2 class="dcm-section-header">Clear Advice, Smart Strategies.</h2>
-            <p>Our team works to ensure you’re never waiting for an answer. Speak to a lawyer, every time you call. We empower individuals and small organisations with clear advice and smart strategies. </p>
+            <p>Our team works to ensure you’re never waiting for an answer. Speak to a lawyer, <span class="emphasis">every</span> time you call. We empower individuals and small organisations with clear advice and smart strategies. </p>
             <p class="dcm-more-text"><a href="#">more about us</a></p>
         </div>
         <div class="cell medium-3">
