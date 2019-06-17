@@ -4,12 +4,10 @@
         <h1>PLAIN ENGLISH ADVICE, TAILORED JUST FOR YOU</h1>
         <hr class="hero-hr">
         <div class="hero-buttons">
-        <div class="dcm-btn">
-            <p class="btn-line">-</p>
-            <button>WHO ARE WE?</button>
+        <div class="dcm-btn dcm-btn-one">
+            <span>WHO ARE WE?</span>
         </div>
-        <div class="dcm-btn">
-            <p class="btn-line">-</p>
+        <div class="dcm-btn-full">
             <button>TALK TO US</button>
         </div>
         </div>

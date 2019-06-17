@@ -12,7 +12,11 @@
 </div>
 <footer>
 	<div class="grid-container fluid dcm-footer-map">
-		<a href="https://goo.gl/maps/h61CaaP79K1wV9vp9" target="_blank"><button class="dcm-footer-btn">12 COLLINS STREET, MELBOURNE</button></a>
+		<a href="https://goo.gl/maps/h61CaaP79K1wV9vp9" target="_blank">0
+			<div class="dcm-btn-full">
+			<button class="dcm-footer-btn">12 COLLINS STREET, MELBOURNE</button>
+			</div>
+		</a>
 	</div>
 	<div class="grid-container fluid dcm-footer-middle">
 		<div class="grid-container dcm-flex">
