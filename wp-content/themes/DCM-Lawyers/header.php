@@ -24,8 +24,8 @@
 	<?php endif; ?>
 	<header class="site-header" role="banner">
 		<div class="grid-container dcm-top-nav">
-			<p><i class="fas fa-envelope-open"></i>admin@dcmlawyers.com</p>
-			<p><i class="fas fa-phone"></i>(03) 9670 0001</p>
+			<p><i class="fas fa-envelope-open"></i><?php echo get_theme_mod('dcm-email-setting'); ?></p>
+			<p><i class="fas fa-phone"></i><?php echo get_theme_mod('dcm-phone-number-setting'); ?></p>
 		</div>	
 		<div class="grid-container">
 			<div class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle(); ?>>

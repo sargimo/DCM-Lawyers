@@ -3,7 +3,10 @@
 
     <?php the_title('<h2 class="post-title">', '</h2>'); ?>
     <div class="post-content">
-        <?php the_content(); ?> 
+        <?php the_content(); 
+        the_excerpt();
+        echo get_post_meta( get_the_ID(), 'dcm_bio_content', true );
+    ?>
     </div>
     
     <?php

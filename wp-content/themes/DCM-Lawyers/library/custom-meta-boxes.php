@@ -14,9 +14,9 @@ function dcm_add_post_meta_boxes() {
 
   add_meta_box(
     'dcm-post-class',      // Unique ID
-    esc_html__( 'Post Class', 'example' ),    // Title
+    esc_html__( 'Text Area', 'example' ),    // Title
     'dcm_post_class_meta_box',   // Callback function
-    'post',         // Post type in which box appears
+    'team',         // Post type in which box appears
     'side',         // Context (position)
     'default'         // Priority
   );
@@ -29,9 +29,9 @@ function dcm_post_class_meta_box( $post ) { ?>
     <?php wp_nonce_field( basename( __FILE__ ), 'dcm_post_class_nonce' ); ?>
   
     <p>
-      <label for="dcm-post-class"><?php _e( "Add a custom CSS class, which will be applied to WordPress' post class.", 'example' ); ?></label>
+      <label for="dcm-post-class"><?php _e( "Text Area" )?></label>
       <br />
-      <input class="widefat" type="text" name="dcm-post-class" id="dcm-post-class" value="<?php echo esc_attr( get_post_meta( $post->ID, 'dcm_post_class', true ) ); ?>" size="30" />
+      <textarea class="widefat" type="textarea" name="dcm-post-class" id="dcm-post-class" value="<?php echo esc_attr( get_post_meta( $post->ID, 'dcm_post_class', true ) ); ?>" size="30" ></textarea>
     </p>
   <?php }
     

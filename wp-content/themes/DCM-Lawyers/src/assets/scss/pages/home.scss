@@ -44,9 +44,10 @@
         color: $dcm-secondary-colour;
         font-weight: 700;
     }
-    .dcm-more-text, a {
+    .dcm-btn-underline{
         color: $dcm-primary-colour;
         text-align: right;
+        padding-right: 100px;
     }
 }
 

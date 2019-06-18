@@ -1,23 +1,26 @@
 <?php get_header(); ?>
+<div class="grid-container">
     <div class="grid-x">
-        <div class="cell medium-3">
-            <?php get_template_part('library/menu-practice-areas') ?>
-        </div>
-        <div class="cell medium-9">
-            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-            <?php the_title('<h2 class="post-title">', '</h2>'); ?>
-            <div class="post-content">
-                <?php the_content(); ?> 
+            <div class="cell medium-3">
+                <?php get_template_part('library/menu-practice-areas') ?>
             </div>
-            
-            <?php
-            endwhile;
-            else:
-                ?>
-                <p>NO POSTS BRO GET OUT</p>
-            <?php
-            endif;?>
+            <div class="cell medium-9">
+                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+                <?php the_title('<h2 class="post-title">', '</h2>'); ?>
+                <div class="post-content">
+                    <?php the_content(); ?> 
+                </div>
+                
+                <?php
+                endwhile;
+                else:
+                    ?>
+                    <p>NO POSTS BRO GET OUT</p>
+                <?php
+                endif;?>
+            </div>
         </div>
-    </div>
+
+</div>
 <?php get_footer(); ?>

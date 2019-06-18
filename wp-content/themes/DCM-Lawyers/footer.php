@@ -20,9 +20,9 @@
 	</div>
 	<div class="grid-container fluid dcm-footer-middle">
 		<div class="grid-container dcm-flex">
-			<p class= "dcm-footer-item"><i class="fas fa-home"></i> Level 2, Suite 34, 12 Collins Street, <br>Melbourne, VIC 3000</p>
-			<p class= "dcm-footer-item"><i class="fas fa-phone"></i></i> (03) 9670 0001</p>
-			<p class= "dcm-footer-item"><i class="fas fa-envelope-open"></i> admin@dcmlawyers.com</p>
+			<p class= "dcm-footer-item"><i class="fas fa-home"></i> <?php echo get_theme_mod('dcm-address-setting'); ?>, <br>Melbourne, VIC 3000</p>
+			<p class= "dcm-footer-item"><i class="fas fa-phone"></i></i> <?php echo get_theme_mod('dcm-phone-number-setting'); ?></p>
+			<p class= "dcm-footer-item"><i class="fas fa-envelope-open"></i> <?php echo get_theme_mod('dcm-email-setting'); ?></p>
 			<p class= "dcm-footer-item"><i class="fas fa-clock"></i> Monday - Friday <br>9:00am - 5:00pm</p>
 		</div>
 	</div>

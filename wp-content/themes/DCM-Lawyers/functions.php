@@ -54,11 +54,19 @@ require_once( 'library/responsive-images.php' );
 /** Gutenberg editor support */
 require_once( 'library/gutenberg.php' );
 
-//custom post types
-require_once('library/custom-post-types.php');
+// require_once( 'library/customisation.php' );
+// require_once( 'library/custom-meta-boxes.php' );
 
-//custom meta boxes
-require_once('library/custom-meta-boxes.php');
+require_once( 'library/custom-post-types.php' );
+
+require_once( 'library/lawyer-bio-meta-boxes.php' );
+
+// require_once( 'library/phone-number.php' );
+
+// require_once( 'library/custom-nav.php' );
+
+require_once get_template_directory() . '/library/customisation.php';
+
 
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/class-foundationpress-protocol-relative-theme-assets.php' );
@@ -100,6 +108,7 @@ function dcm_widgets_init() {
 
 }
 add_action( 'widgets_init', 'dcm_widgets_init' );
+
 
 
 
