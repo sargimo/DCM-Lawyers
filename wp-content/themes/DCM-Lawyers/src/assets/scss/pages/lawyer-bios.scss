@@ -1,0 +1,80 @@
+.dcm-team {
+    font-family: $dcm-body-font;
+    font-size: 18px;
+    padding-right: 40px;
+    padding-bottom: $dcm-section-padding;
+    span {
+        font-family: $dcm-body-font;
+        font-size: 18px;
+        padding-bottom: $dcm-section-padding;
+    }
+    ul {
+        padding-left: 20px;
+    }
+    h1 {
+        font-size: 32px;
+        font-family: $dcm-primary-font;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: $dcm-title-letter-spacing;
+        padding-bottom: $dcm-section-padding;     
+    }
+    h2 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: $dcm-primary-font;
+        font-size: 18px;
+        padding-top: $dcm-paragraph-padding;        
+    }
+    h3 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: $dcm-primary-font;
+        font-size: 16px;
+        padding-top: $dcm-paragraph-padding;
+    }
+    .dcm-title h1{
+        font-size: 32px;
+        font-family: $dcm-primary-font;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: $dcm-title-letter-spacing;
+        padding-bottom: $dcm-section-padding;
+    }
+    .dcm-specialties h3, .dcm-specialties p {
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: $dcm-primary-font;
+        font-size: 16px;
+    }
+    .dcm-specialties p {
+        color: $dcm-grey;
+    }
+    .dcm-specialties {
+        padding-bottom: $dcm-paragraph-padding;
+    }
+}
+
+.dcm-team-quote {
+    font-family: $dcm-body-font;
+    font-size: 18px;
+    padding: 40px;  
+    text-align: center;
+    align-self: center;
+    border-left: 1px solid #e5e5e5;
+    .quotation-mark {
+        font-family: 'Courgette', cursive;
+        font-size: 100px;
+        color: $dcm-black;
+        text-align: center;
+        line-height: 60px;    
+    }
+    h4{
+        font-family: $dcm-primary-font;
+        font-size: 16px;
+        font-weight: 700;
+        color: #e5e5e5;
+        text-transform: uppercase;
+    }
+}

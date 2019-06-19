@@ -1,0 +1,27 @@
+.dcm-featured-articles-menu {
+    font-size: 14px;
+    font-family: $dcm-primary-font;
+    #menu-featured-articles {
+        list-style : none;
+        padding-left: 0;
+        margin: 0;
+        li {
+            padding-bottom: 5px;
+        }
+        a {
+            color: $dcm-grey;
+            text-transform: uppercase;
+        }
+        a:hover {
+            color: $dcm-black;
+        }
+        ul {
+            margin: 0;
+        } 
+    }
+    h3 {
+        font-size: 22px;
+        font-family: $dcm-body-font;
+        color: $dcm-secondary-colour;
+    }
+}

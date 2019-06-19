@@ -61,6 +61,8 @@ require_once( 'library/custom-post-types.php' );
 
 require_once( 'library/lawyer-bio-meta-boxes.php' );
 
+require_once( 'library/lawyer-bio-meta-boxes-name.php' );
+
 // require_once( 'library/phone-number.php' );
 
 // require_once( 'library/custom-nav.php' );
@@ -80,6 +82,8 @@ if ( !function_exists('dcm_setup')) :
         //register menus
         register_nav_menus(array(
             'practice-areas-menu' => __('Practice Areas'),
+            'featured-articles-menu' => __('Featured Articles'),
+            'team-menu' => __('Team Menu'),
             // 'footer-menu' => __('Footer'),
             // 'social-menu' => __('Social'),
         ));

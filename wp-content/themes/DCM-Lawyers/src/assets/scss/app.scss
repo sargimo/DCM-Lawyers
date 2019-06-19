@@ -81,11 +81,15 @@
 @import "components/links";
 @import "components/practice-areas-menu";
 @import "components/home-testimonials";
+@import "components/featured-articles-menu";
+@import "components/team-menu";
 
 // Templates
 @import "templates/front";
 @import "templates/kitchen-sink";
 
 // Pages
-
 @import "pages/home";
+@import "pages/practice-areas";
+@import "pages/articles";
+@import "pages/lawyer-bios";

@@ -1,20 +1,35 @@
 <?php get_header(); ?>
-    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<div class="grid-container">
+    <div class="grid-x">
+            <div class="cell medium-3">
+                    <?php get_template_part('library/menu-team') ?>
+            </div>
+            <div class="cell medium-6 dcm-team">
+                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-    <?php the_title('<h2 class="post-title">', '</h2>'); ?>
-    <div class="post-content">
-        <?php the_content(); 
-        the_excerpt();
-        echo get_post_meta( get_the_ID(), 'dcm_bio_content', true );
-    ?>
-    </div>
-    
-    <?php
-    endwhile;
-    else:
-        ?>
-        <p>NO POSTS BRO GET OUT</p>
-    <?php
-    endif;?>
+                <!-- < ?php the_title('<h1 class="dcm-title">', '</h1>'); ?> -->
+                <div class="dcm-specialties">
+                    <h3>Specialises in</h3>
+                    <p><?php the_excerpt(); ?></p>
+                </div>
+                <div class="dcm-content">
+                    <?php the_content(); ?> 
+                </div>
+                
+                <?php
+                endwhile;
+                else:
+                    ?>
+                    <p>NO POSTS BRO GET OUT</p>
+                <?php
+                endif;?>
+            </div>
+            <div class="cell medium-3 dcm-team-quote ">
+                <h3 class="quotation-mark">"</h3>
+                <p><?php echo get_post_meta( get_the_ID(), 'dcm_bio_content', true ); ?></p>
+                <h4 class="name"><?php echo get_post_meta( get_the_ID(), 'dcm_name_content', true ); ?></h4>
+            </div>
+        </div>
 
+</div>
 <?php get_footer(); ?>

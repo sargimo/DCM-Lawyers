@@ -11,7 +11,7 @@ function dcm_bio_cb($post) {
     $value = get_post_meta($post->ID, 'dcm_bio_content', true);
     ?>
     <p>
-        Testing Text Area
+        Testimonial Quote
     </p>
     <textarea id="dcm_bio_content" name="dcm_bio_content" cols="100%" rows="10"><?php echo wp_kses_post($value); ?></textarea>
     <?php

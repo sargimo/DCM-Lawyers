@@ -2,13 +2,13 @@
 <div class="grid-container">
     <div class="grid-x">
             <div class="cell medium-3">
-                <?php get_template_part('library/menu-practice-areas') ?>
+                    <?php get_template_part('library/menu-practice-areas') ?>
             </div>
-            <div class="cell medium-9">
+            <div class="cell medium-9 dcm-practice-areas">
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-                <?php the_title('<h2 class="post-title">', '</h2>'); ?>
-                <div class="post-content">
+                <?php the_title('<h1 class="dcm-title">', '</h1>'); ?>
+                <div class="dcm-content">
                     <?php the_content(); ?> 
                 </div>
                 
