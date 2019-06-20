@@ -98,3 +98,18 @@
 }
 
 
+.dropdown.menu {
+  li.is-dropdown-submenu-parent {
+    a {
+      &::after {
+        border-color: $dcm-black transparent transparent;
+        margin-top: -2px;
+      }
+      &:hover {
+        &::after {
+          border-color: $dcm-primary-colour transparent transparent;
+        }
+      }
+    }
+  } 
+}

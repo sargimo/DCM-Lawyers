@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php get_header(); 
+$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+echo '<div class="grid-container fluid practice-areas-hero" style="background-image: url('. $url.')">'; ?>
+    <div class="grid-container">
+    </div>
+</div>
 <div class="grid-container">
     <div class="grid-x">
             <div class="cell medium-3">

@@ -54,19 +54,13 @@ require_once( 'library/responsive-images.php' );
 /** Gutenberg editor support */
 require_once( 'library/gutenberg.php' );
 
-// require_once( 'library/customisation.php' );
-// require_once( 'library/custom-meta-boxes.php' );
-
+//Custom Post Types
 require_once( 'library/custom-post-types.php' );
 
+// Custom Meta Boxes for Team Bio Pages
 require_once( 'library/lawyer-bio-meta-boxes.php' );
 
-require_once( 'library/lawyer-bio-meta-boxes-name.php' );
-
-// require_once( 'library/phone-number.php' );
-
-// require_once( 'library/custom-nav.php' );
-
+//Customisation api changes
 require_once get_template_directory() . '/library/customisation.php';
 
 

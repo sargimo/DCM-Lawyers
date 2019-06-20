@@ -5,7 +5,9 @@
                     <?php get_template_part('library/menu-team') ?>
             </div>
             <div class="cell medium-6 dcm-team">
-                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                <?php if (have_posts()) : while (have_posts()) : the_post(); 
+                    $meta = get_post_meta( $post->ID, 'your_fields', true );
+                ?>
 
                 <!-- < ?php the_title('<h1 class="dcm-title">', '</h1>'); ?> -->
                 <div class="dcm-specialties">
@@ -26,8 +28,8 @@
             </div>
             <div class="cell medium-3 dcm-team-quote ">
                 <h3 class="quotation-mark">"</h3>
-                <p><?php echo get_post_meta( get_the_ID(), 'dcm_bio_content', true ); ?></p>
-                <h4 class="name"><?php echo get_post_meta( get_the_ID(), 'dcm_name_content', true ); ?></h4>
+                <p><?php if (is_array($meta) && isset($meta['testimonial'])){ echo $meta['testimonial']; } ?></p>
+                <h4 class="name"><?php if (is_array($meta) && isset($meta['author'])){ echo $meta['author']; } ?></h4>
             </div>
         </div>
 
