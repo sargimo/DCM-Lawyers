@@ -17,7 +17,11 @@
         }
         ul {
             margin: 0;
-        } 
+        }
+        .current-menu-item a, .current-menu-ancestor a{
+            font-weight: 700;
+            color: $dcm-black;
+        }     
     }
     h3 {
         font-size: 22px;

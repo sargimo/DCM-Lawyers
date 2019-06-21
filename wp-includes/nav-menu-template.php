@@ -483,7 +483,7 @@ function _wp_menu_item_classes_by_context( &$menu_items ) {
 				$active_object              = $menu_item->object;
 
 				// give front page item current-menu-item class when extra query arguments involved
-			} elseif ( $item_url == $front_page_url && is_front_page() ) {
+			} elseif ( $item_url == $home_url && is_front_page() ) {
 				$classes[] = 'current-menu-item';
 			}
 

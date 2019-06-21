@@ -1,6 +1,7 @@
 <?php get_header(); 
 $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 echo '<div class="grid-container fluid practice-areas-hero" style="background-image: url('. $url.')">'; ?>
+    <h1><?php the_title();?></h1>
     <div class="grid-container">
     </div>
 </div>
@@ -12,7 +13,6 @@ echo '<div class="grid-container fluid practice-areas-hero" style="background-im
             <div class="cell medium-9 dcm-practice-areas">
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-                <?php the_title('<h1 class="dcm-title">', '</h1>'); ?>
                 <div class="dcm-content">
                     <?php the_content(); ?> 
                 </div>
