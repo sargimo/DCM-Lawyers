@@ -8,5 +8,6 @@ import Foundation from 'foundation-sites';
 // the line below
 //import './lib/foundation-explicit-pieces';
 import './lib/form-maker-contact-form-buttons.js';
+import './lib/about-us-active-state.js';
 
 $(document).foundation();

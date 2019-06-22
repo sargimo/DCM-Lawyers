@@ -77,6 +77,14 @@
 }
 
 #menu-primary {
+  .menu-item-73.current-menu-item a{
+    color: #fff !important;
+  }
+  .menu-item-73.current-menu-item {
+  &:hover a{
+    color: $dcm-primary-colour !important;
+  }
+}
     //handles the god damned child active states
   .current-menu-item:not(.is-dropdown-submenu-parent) {
     a{

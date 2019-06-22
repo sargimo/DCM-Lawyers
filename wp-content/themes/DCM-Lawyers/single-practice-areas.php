@@ -14,7 +14,10 @@ echo '<div class="grid-container fluid practice-areas-hero" style="background-im
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
                 <div class="dcm-content">
-                    <?php the_content(); ?> 
+                    <?php the_content(); ?>
+                    <div class="dcm-btn-full">
+                        <button>TALK TO US</button>
+                    </div> 
                 </div>
                 
                 <?php

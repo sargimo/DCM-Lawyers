@@ -15,15 +15,28 @@
 
 get_header(); ?>
 <div class="grid-container">
-    <div class="grid-x">
+    <div class="grid-x dcm-articles-list">
             <div class="cell medium-3">
                     <?php get_template_part('library/menu-featured-articles') ?>
             </div>
-            <div class="cell medium-9 dcm-articles-list">
-			<h1 class="articles-title">Articles</h1>
+            <div class="grid-x grid-margin-x articles-item-bg">
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                
+                <div class="cell medium-4 articles-item">
+                    <a href="<?php the_permalink()?>">
+                    
+                    <?php the_title('<h1 class="dcm-title">', '</h1>'); ?> 
+                    <hr class="articles-hr">
+                    <div class="author">
+                        <?php echo get_avatar( get_the_author_email(), '60' ); ?> 
+                        <h4 class="articles-author"><span class="written-by">written by</span><br><?php the_author(); ?></h4>
+                    </div>
+                    <div class="dcm-btn-underline">
+                        <button>read more</button>
+                    </div>
+                    </a>
+                </div>
 
-                <a href="<?php the_permalink()?>"><?php the_title('<h1 class="dcm-title">', '</h1>'); ?> </a>
                 
                 <?php
                 endwhile;
@@ -32,8 +45,8 @@ get_header(); ?>
                     <p>NO POSTS BRO GET OUT</p>
                 <?php
                 endif;?>
-            </div>
         </div>
+    </div>
 
 </div>
 
