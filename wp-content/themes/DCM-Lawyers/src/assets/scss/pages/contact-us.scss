@@ -1,0 +1,51 @@
+.map {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+.dcm-contact-us {
+    height: 100%;
+    margin-bottom: $dcm-section-padding;
+    align-items: center;
+    h1 {
+        width: 100%;
+        font-size: 32px;
+        font-family: $dcm-primary-font;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: $dcm-title-letter-spacing;
+        padding-bottom: $dcm-section-padding;     
+    }
+    i {
+        color: $dcm-secondary-colour;
+        padding-right: 20px;
+    }
+    .contact-item {
+        padding-left: 40px;
+        display: flex;
+        align-items: center;    
+    }
+}
+
+.dcm-form-bg {
+    background: $dcm-secondary-colour;
+    padding: $dcm-section-padding 0;
+}
+
+.dcm-form {
+    max-width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    .dcm-btn-full button:hover {
+        color: $dcm-primary-colour;
+    }
+    .dcm-btn-full button {
+        margin: 0 auto;
+    }
+    .wdform-label {
+        color: #fff;
+    }
+}
