@@ -1,10 +1,13 @@
 .home-hero {
     height: 60vh;
     background: url('../images/home-hero.jpg');
+    background-position: center;
     background-size: cover;
     display: flex;
     align-items: center;
     margin-top: -100px !important;
+    background-color: #bbbbbb;
+    background-blend-mode: multiply;
     h1 {
         color: #fff;
         font-family: $dcm-primary-font;
@@ -67,6 +70,7 @@
     font-family: $dcm-primary-font;
     text-align: center;
     color: $dcm-black;
+    margin-bottom: $dcm-section-padding;
     a {
         color: $dcm-black;
     }
@@ -83,7 +87,6 @@
         font-family: $dcm-primary-font;
         text-align: center;
         font-size: 22px;
-        margin-bottom: $dcm-section-padding;
     }
     .dcm-team-thumbnail img {
         max-width: 250px;

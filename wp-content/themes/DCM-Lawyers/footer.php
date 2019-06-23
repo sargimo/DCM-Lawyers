@@ -28,7 +28,7 @@
 	</div>
 	<div class="grid-container fluid dcm-footer-bottom">
 			<div class="grid-container">
-				<p>Liability limited by a scheme approved under Professional Standards Legislation.<span class="dcm-footer-author">Copyright © 2019 · Created by PUT SOMETHING HERE </p>
+				<p>Liability limited by a scheme approved under Professional Standards Legislation.<span class="dcm-footer-author">Copyright © <?php echo date("Y"); ?> Created by PUT SOMETHING HERE </p>
 			</div>
 		</div>
 </footer>

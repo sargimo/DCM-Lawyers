@@ -64,6 +64,7 @@
                     <h3>
                         <?php print the_title(); ?>
                     </h3>
+                    <?php the_excerpt() ?>
                 </a>
             </div>
         </div>

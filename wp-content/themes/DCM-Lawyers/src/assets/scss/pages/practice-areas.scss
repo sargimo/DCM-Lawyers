@@ -7,7 +7,7 @@
     align-items: center;
     margin-top: -100px !important;
     background-color: #a9a9a9;
-    background-blend-mode: multiply;  
+    background-blend-mode: multiply;
     h1 {
         width: 100%;
         text-align: center;
@@ -66,5 +66,10 @@
         margin: 0 auto;
         margin-top: 32px;
         text-align: center;
+        button {
+            &:hover {
+                color: $dcm-black;
+            }
+        }
     }
 }

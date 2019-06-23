@@ -1,12 +1,22 @@
 // Navigation breakpoints
 .mobile-menu,
 .site-title-bar {
-  @include hide-for(medium);
+  @include hide-for(nav);
+  background: #fff;
+  border-bottom: 1px solid #d7d7d7;
+  z-index: 3000;
+  .menu-icon {
+    left: 90%;
+    &::after {
+    background: $dcm-black;
+    box-shadow: 0 7px 0 $dcm-black, 0 14px 0 $dcm-black;
+  }
+}
 }
 //
 .desktop-menu,
 .site-navigation .top-bar-left {
-  @include show-for(medium);
+  @include show-for(nav);
 }
 
 // Site title
@@ -40,22 +50,45 @@
   text-align: right;
   margin-top: 10px;
   margin-bottom: -40px;
+  @include mq ('navigation') {
+    margin: 0;
+    background: $dcm-secondary-colour;
+    display: flex;
+    padding: 10px 20px 10px 0;
+  }
   p {
     font-family: $dcm-primary-font;
     text-align: right;
     padding-right: 16px;
     font-size: 14px;
     font-weight: 600;
+    @include mq ('navigation') {
+      color: #fff;
+      font-size: 12px;
+      margin: 0;
+      padding: 10px 0;
+      margin-right: 40px;
+    }
+    @include mq ('phone') {
+      margin-right: 20px;
+    }
   }
   i {
     color: $dcm-secondary-colour;
     padding-right: 15px;
     font-size: 22px;
+    @include mq ('navigation') {
+      color: $dcm-primary-colour;
+      font-size: 18px;
+    }
   }
 }
 
 .top-bar {
   padding: 0 16px 16px 16px;
+  @include mq ('navigation') {
+    padding: 0;
+  }
 }
 
 .top-bar, .top-bar ul {
@@ -74,6 +107,12 @@
   z-index: 100;
   background-color: #fff;
   border-bottom: 1px solid #d7d7d7;
+  .grid-container {
+    @include mq ('navigation') {
+      padding: 0;
+    }
+  }
+
 }
 
 #menu-primary {
@@ -102,6 +141,10 @@
       font-weight: 400;
       &:hover {
         color: $dcm-primary-colour;
+    }
+    @include mq ('navigation'){
+      font-size: 10px;
+      padding: 10px 18px;
     }
   }
   .menu-item-73 {
@@ -141,4 +184,66 @@
       }
     }
   } 
+}
+
+.mobile-menu {
+  width: 100%;
+  a {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 30px 0;
+    font-family: $dcm-primary-font;
+    color: $dcm-black;
+    text-transform: uppercase;
+    font-size: 14px;  
+    font-weight: 400;
+  }
+  .submenu-toggle {
+    display: none;
+    &::after {
+      border-color: $dcm-black transparent transparent;
+    }
+  }
+}
+.top-bar-right {
+  width: 100%;
+  margin: 0;
+  @include mq ('navigation') {
+    margin: 0;
+  }
+}
+
+.menu .is-active > a {
+  background: $dcm-primary-colour;
+  font-weight: 700;
+}
+
+.mobile-menu {
+  transition: all 0.5s ease;
+  height: 0px;
+  // background: #222;
+}
+
+.mobile-menu.active {
+  transition: all 0.5s ease;
+  height: 380px;
+}
+
+.top-bar.active {
+  background: transparent;
+}
+
+.top-bar ul.active {
+  background: transparent;
+}
+
+#menu-primary-1 *{
+  transition: all 0.5s ease;
+  transform: translateY(-380px);
+}
+
+#menu-primary-1.dcmactive *{
+  transform: translateY(0px);
+  transition: all 0.5s;
 }

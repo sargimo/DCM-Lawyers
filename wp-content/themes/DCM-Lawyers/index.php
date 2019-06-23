@@ -19,10 +19,11 @@ get_header(); ?>
             <div class="cell medium-3">
                     <?php get_template_part('library/menu-featured-articles') ?>
             </div>
-            <div class="grid-x grid-margin-x articles-item-bg">
+            <div class="articles-item-bg cell medium-9">
+                <h1 class="dcm-section-header">ARTICLES</h1>
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 
-                <div class="cell medium-4 articles-item">
+                <div class="articles-item">
                     <a href="<?php the_permalink()?>">
                     
                     <?php the_title('<h1 class="dcm-title">', '</h1>'); ?> 
@@ -30,9 +31,9 @@ get_header(); ?>
                     <div class="author">
                         <?php echo get_avatar( get_the_author_email(), '60' ); ?> 
                         <h4 class="articles-author"><span class="written-by">written by</span><br><?php the_author(); ?></h4>
-                    </div>
-                    <div class="dcm-btn-underline">
-                        <button>read more</button>
+                        <div class="dcm-btn-underline">
+                            <button>read more</button>
+                        </div>
                     </div>
                     </a>
                 </div>

@@ -28,7 +28,7 @@
 			<p><i class="fas fa-phone"></i><?php echo get_theme_mod('dcm-phone-number-setting', '(03) 9670 0001'); ?></p>
 		</div>	
 		<div class="grid-container">
-			<div class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle(); ?>>
+			<div data-hide-for="nav" class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle(); ?>>
 				<div class="title-bar-left">
 					<button aria-label="<?php _e( 'Main Menu', 'foundationpress' ); ?>" class="menu-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"></button>
 					<span class="site-mobile-title title-bar-title">
