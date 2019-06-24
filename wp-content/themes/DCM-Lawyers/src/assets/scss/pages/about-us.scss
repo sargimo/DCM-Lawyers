@@ -1,5 +1,8 @@
 .dcm-about-us {
     padding-bottom: $dcm-section-padding;
+    @include mq ('tablet') {
+        padding-bottom: $dcm-responsive-section-padding;
+    }
     p {
         font-family: $dcm-body-font;
     }
@@ -8,5 +11,23 @@
     text-align: center;
     font-size: 22px;
     margin-bottom: $dcm-section-padding;
+    }
+    .dcm-section-header {
+        @include mq ('tablet') {
+            margin-bottom: $dcm-responsive-section-padding;
+        }
+    }
+    #menu-team {
+        @include mq ('tablet') {
+            text-align: center;
+            padding-bottom: $dcm-responsive-section-padding;
+        }
+    }
+    .dcm-team-menu {
+        h3 {
+            @include mq ('tablet') {
+                text-align: center;
+            }
+        }
     }
 }

@@ -18,6 +18,9 @@
   padding: 30px 80px;
   cursor: pointer;
   transition: all 0.3s;
+  @include mq ('phone-wide') {
+    padding: 30px 50px;
+  }
 }
 
 .dcm-footer-map .dcm-btn-full button:hover {
@@ -235,7 +238,7 @@
     font-family: $dcm-primary-font;
     font-size: 14px;
     background: $dcm-primary-colour;
-    border: none;
+    border: 1px solid $dcm-primary-colour;
     -webkit-transition: all 1s ease;
     transition: all 1s ease; 
     font-weight: 700;
@@ -249,6 +252,7 @@
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
   background: transparent;
+  border: 1px solid transparent;
   // font-size: 16px;
   color: #fff;
 }

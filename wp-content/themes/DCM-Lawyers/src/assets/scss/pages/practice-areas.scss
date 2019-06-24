@@ -8,6 +8,9 @@
     margin-top: -100px !important;
     background-color: #a9a9a9;
     background-blend-mode: multiply;
+    @include mq ('phone-wide') {
+        margin-top: -58px !important;
+    }
     h1 {
         width: 100%;
         text-align: center;
@@ -20,12 +23,28 @@
 
 .dcm-practice-areas-menu{
     padding-top: $dcm-section-padding;
+    margin-top: 0;
+    li {
+        margin-right: 16px;
+    }
+    @include mq ('tablet') {
+        text-align: center;
+        padding-top: $dcm-responsive-section-padding;
+    }
+    h3 {
+        @include mq ('tablet') {
+            margin: 0;
+        }
+    }
 }
 
 .dcm-practice-areas {
     font-family: $dcm-body-font;
     font-size: 18px;
     padding: $dcm-section-padding 0 ;
+    @include mq ('tablet') {
+        padding: $dcm-responsive-section-padding 0;
+    }
     span {
         font-family: $dcm-body-font;
         font-size: 18px;

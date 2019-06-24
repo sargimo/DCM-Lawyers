@@ -3,6 +3,9 @@
     font-size: 18px;
     padding-right: 40px;
     padding-bottom: $dcm-section-padding;
+    @include mq ('tablet-wide') {
+        padding-bottom: $dcm-responsive-section-padding;
+    }
     span {
         font-family: $dcm-body-font;
         font-size: 18px;
@@ -63,6 +66,9 @@
     text-align: center;
     align-self: center;
     border-left: 1px solid #e5e5e5;
+    @include mq ('tablet-wide') {
+        display: none;
+    }
     .quotation-mark {
         font-family: 'Courgette', cursive;
         font-size: 100px;
@@ -78,3 +84,31 @@
         text-transform: uppercase;
     }
 }
+.dcm-team-quote-mobile {
+    font-family: $dcm-body-font;
+    font-size: 18px;
+    padding: 40px;  
+    text-align: center;
+    align-self: center;
+    border-left: 1px solid #e5e5e5;
+    display: none;
+    @include mq ('tablet-wide') {
+        display: block;
+        padding-bottom: $dcm-responsive-section-padding;
+    }
+    .quotation-mark {
+        font-family: 'Courgette', cursive;
+        font-size: 100px;
+        color: $dcm-black;
+        text-align: center;
+        line-height: 60px;    
+    }
+    h4{
+        font-family: $dcm-primary-font;
+        font-size: 16px;
+        font-weight: 700;
+        color: #e5e5e5;
+        text-transform: uppercase;
+    }
+}
+

@@ -1,6 +1,10 @@
 .dcm-team-menu {
     font-size: 14px;
     font-family: $dcm-primary-font;
+    @include mq ('tablet') {
+        text-align: center;
+        padding-bottom: $dcm-responsive-section-padding;
+    }
     #menu-team {
         list-style : none;
         padding-left: 0;

@@ -36,16 +36,11 @@
   float:right;
 }
 
-// .dcm-nav {
-//   padding: 0;
-// }
 .dcm-top-nav {
   margin: 0 auto;
-  // position: fixed;
   z-index: 2;
   display: flex;
   justify-content: flex-end;
-  // width: 100vw;
   text-align: right;
   margin-top: 10px;
   margin-bottom: -40px;
@@ -70,6 +65,10 @@
     }
     @include mq ('phone') {
       margin-right: 20px;
+      font-size: 11px;
+    }
+    @include mq ('trashbag') {
+      font-size: 10px;
     }
   }
   i {
@@ -216,32 +215,3 @@
   background: $dcm-primary-colour;
   font-weight: 700;
 }
-
-// .mobile-menu {
-//   transition: all 0.5s ease;
-//   height: 0px;
-//   // background: #222;
-// }
-
-// .mobile-menu.active {
-//   transition: all 0.5s ease;
-//   height: 380px;
-// }
-
-// .top-bar.active {
-//   background: transparent;
-// }
-
-// .top-bar ul.active {
-//   background: transparent;
-// }
-
-// #menu-primary-1 *{
-//   transition: all 0.5s ease;
-//   transform: translateY(-380px);
-// }
-
-// #menu-primary-1.dcmactive *{
-//   transform: translateY(0px);
-//   transition: all 0.5s;
-// }

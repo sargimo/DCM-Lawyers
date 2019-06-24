@@ -6,11 +6,11 @@ echo '<div class="grid-container fluid practice-areas-hero" style="background-im
     </div>
 </div>
 <div class="grid-container">
-    <div class="grid-x">
-            <div class="cell medium-3">
+    <div class="grid-x grid-margin-x">
+            <div class="cell medium-4">
                     <?php get_template_part('library/menu-practice-areas') ?>
             </div>
-            <div class="cell medium-9 dcm-practice-areas">
+            <div class="cell medium-8 dcm-practice-areas">
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
                 <div class="dcm-content">

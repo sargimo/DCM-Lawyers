@@ -1,12 +1,16 @@
 .dcm-featured-articles-menu {
     font-size: 14px;
     font-family: $dcm-primary-font;
+    @include mq ('tablet') {
+        text-align: center;
+        padding-bottom: $dcm-responsive-section-padding;
+    }
     #menu-featured-articles {
         list-style : none;
         padding-left: 0;
         margin: 0;
         li {
-            padding-bottom: 5px;
+            padding-bottom: 15px;
         }
         a {
             color: $dcm-grey;
@@ -24,7 +28,7 @@
         }     
     }
     h3 {
-        font-size: 22px;
+        font-size: 32px;
         font-family: $dcm-body-font;
         color: $dcm-secondary-colour;
     }

@@ -16,11 +16,11 @@
 get_header(); ?>
 <div class="grid-container">
     <div class="grid-x dcm-articles-list">
-            <div class="cell medium-3">
+            <div class="cell small-12 medium-3">
                     <?php get_template_part('library/menu-featured-articles') ?>
             </div>
-            <div class="articles-item-bg cell medium-9">
-                <h1 class="dcm-section-header">ARTICLES</h1>
+            <div class="articles-item-bg cell small-12 medium-9">
+                <h1 class="dcm-section-header">OTHER ARTICLES</h1>
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 
                 <div class="articles-item">

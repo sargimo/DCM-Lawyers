@@ -8,6 +8,13 @@
     margin-top: -100px !important;
     background-color: #bbbbbb;
     background-blend-mode: multiply;
+    @include mq ('navigation') {
+        text-align: center;
+    }
+    @include mq ('phone-wide') {
+        margin-top: -140px !important;
+        height: 100vh;
+    }
     h1 {
         color: #fff;
         font-family: $dcm-primary-font;
@@ -15,11 +22,28 @@
         font-size: 3.5em;
         max-width: 50%;
         text-shadow: 0px 1px 15px rgba(34,34,34,0.22);
+        @include mq ('tablet-wide') {
+            font-size: 3em;
+        }
+        @include mq ('navigation') {
+            max-width: 100%;
+        }
+        @include mq ('tablet-small') {
+            font-size: 2.5em;
+        }
+        @include mq ('phone') {
+            font-size: 2em;
+        }
     }
     .hero-hr {
         max-width: 50%;
         margin: 0;
         margin-bottom: $dcm-paragraph-padding;
+        @include mq ('navigation') {
+            padding-top: 18px;
+            max-width: 75%;
+            margin: 0 auto;
+        }
     }
     .hero-buttons {
         padding-top: 10px;
@@ -27,6 +51,17 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include mq ('navigation') {
+            max-width: 100%;
+            justify-content: space-evenly;
+            padding-top: 32px;
+        }
+        @include mq ('tablet-small') {
+            flex-direction: column;
+            button {
+                margin-top: 20px;
+            }
+        }
     }
     .dcm-btn {
         display: flex;
@@ -42,8 +77,16 @@
     padding-bottom: $dcm-section-padding;
     font-size: 18px;
     font-family: $dcm-body-font;
+    h2 {
+        @include mq ('tablet') {
+            text-align: center;
+        }
+    }
     p {
         padding-right: 100px;
+        @include mq ('tablet') {
+            padding-right: 0;
+        }
     }
     .emphasis {
         color: $dcm-secondary-colour;
@@ -53,9 +96,17 @@
         color: $dcm-primary-colour;
         text-align: right;
         padding-right: 100px;
+        @include mq ('tablet') {
+            padding-right: 0;
+            text-align: center;
+        }
     }
     .dcm-practice-areas-menu {
         padding-top: 0;
+        margin-top: 0;
+        @include mq ('tablet') {
+            margin-top: $dcm-responsive-section-padding;
+        }
     }
 }
 
@@ -64,6 +115,23 @@
     height: 435px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    p {
+        @include mq ('phone-wide') {
+            margin: 0;
+        }
+    }
+    h2 {
+        @include mq ('phone-wide') {
+            font-size: 100px;
+            margin: 0;
+        }
+    }
+    span {
+        @include mq ('phone-wide') {
+            font-size: 28px;
+        }
+    }
 }
 
 .dcm-home-team {
@@ -79,7 +147,6 @@
         text-align: center;
     }
     .dcm-home-team-item {
-        // display: block;
         font-family: $dcm-primary-font;
         padding: $dcm-paragraph-padding 0;
     }
@@ -89,8 +156,8 @@
         font-size: 22px;
     }
     .dcm-team-thumbnail img {
-        max-width: 250px;
-        height: 250px;
+        max-width: 80%;
+        max-height: 80%;
         border-radius: 50%;
         padding-bottom: $dcm-paragraph-padding;
     }

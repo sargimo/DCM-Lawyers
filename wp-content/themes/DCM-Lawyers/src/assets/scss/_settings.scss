@@ -897,11 +897,13 @@ $dcm-title-letter-spacing: 0.05em;
 // -------------------
 
 $dcm-section-padding: 100px;
+$dcm-responsive-section-padding: 50px;
 $dcm-paragraph-padding: 16px;
 
 //60. DCM Mixins
 //  ------------
 $dcm-breakpoints: (
+  "trashbag": 360px,
   "phone": 400px,
    "phone-wide": 480px,
    "phablet": 560px,

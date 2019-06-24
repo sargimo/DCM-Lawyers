@@ -27,8 +27,11 @@
   color: #fff;
   text-align: left;
   font-family: $dcm-primary-font;
-  font-size: 14px;
-  padding: 15px 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: $dcm-title-letter-spacing;
+  font-size: 12px;
+  padding: 32px 0;
 
   i {
     color: $dcm-primary-colour;
@@ -42,12 +45,14 @@
   .dcm-flex {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    text-align: center;
   }
   .dcm-footer-item {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 }
 
@@ -59,6 +64,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  .dcm-btn-full {
+    @include mq ('phone-wide') {
+      padding: 20px 30px;
+    }
+  }
 }
 
 .dcm-footer-bottom {
@@ -73,5 +83,17 @@
   }
   .dcm-footer-author {
     text-align: right;
+    @include mq ('desktop') {
+      text-align: center;
+      padding-top: 16px;
+    }
+  }
+  .dcm-footer-flex {
+    display: flex;
+    justify-content: space-between;
+    @include mq ('desktop') {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 }

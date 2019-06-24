@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 <div class="grid-container">
-    <div class="grid-x">
+    <div class="grid-x grid-margin-x">
             <div class="cell medium-3">
                     <?php get_template_part('library/menu-team') ?>
             </div>
-            <div class="cell medium-6 dcm-team">
+            <div class="cell auto dcm-team">
                 <?php if (have_posts()) : while (have_posts()) : the_post(); 
                     $meta = get_post_meta( $post->ID, 'your_fields', true );
                 ?>
@@ -27,6 +27,11 @@
                 endif;?>
             </div>
             <div class="cell medium-3 dcm-team-quote ">
+                <h3 class="quotation-mark">"</h3>
+                <p><?php if (is_array($meta) && isset($meta['testimonial'])){ echo $meta['testimonial']; } ?></p>
+                <h4 class="name"><?php if (is_array($meta) && isset($meta['author'])){ echo $meta['author']; } ?></h4>
+            </div>
+            <div class="cell medium-12 dcm-team-quote-mobile ">
                 <h3 class="quotation-mark">"</h3>
                 <p><?php if (is_array($meta) && isset($meta['testimonial'])){ echo $meta['testimonial']; } ?></p>
                 <h4 class="name"><?php if (is_array($meta) && isset($meta['author'])){ echo $meta['author']; } ?></h4>

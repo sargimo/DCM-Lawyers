@@ -15,14 +15,14 @@
 </div>
 <div class="grid-container">
     <div class="grid-x dcm-home-about">
-        <div class="cell medium-9">
+        <div class="cell medium-9 small-12">
             <h2 class="dcm-section-header">Clear Advice, Smart Strategies.</h2>
             <p>Our team works to ensure you’re never waiting for an answer. Speak to a lawyer, <span class="emphasis">every</span> time you call. We empower individuals and small organisations with clear advice and smart strategies. </p>
             <div class="dcm-btn-underline">
                 <a href="#"><button>more about us</button></a>
             </div>
         </div>
-        <div class="cell medium-3">
+        <div class="cell medium-3 small-12">
             <?php get_template_part('library/menu-practice-areas') ?>
         </div>
     </div>

@@ -8,6 +8,6 @@
 
 ?>
 
-<nav class="mobile-menu vertical menu" role="navigation">
+<nav class="mobile-menu vertical menu" role="navigation" >
 	<?php foundationpress_mobile_nav(); ?>
 </nav>

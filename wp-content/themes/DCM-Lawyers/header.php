@@ -15,6 +15,7 @@
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.css" integrity="sha256-T83uxgXXWPZaSIlVc2Y1H6ZSAZVjHyXfX4Y8qof8WKA=" crossorigin="anonymous" />	
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
@@ -39,12 +40,11 @@
 				</div>
 			</div>
 
-			<nav class="site-navigation top-bar" role="navigation" id="<?php foundationpress_mobile_menu_id(); ?>">
+			<nav class="site-navigation top-bar" data-toggler data-animate="fade-in fade-out" role="navigation" id="<?php foundationpress_mobile_menu_id(); ?>">
 				<div class="top-bar-left">
 					<div class="site-desktop-title top-bar-title">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 						<img class="dcm-logo" src="<?php bloginfo('template_directory');?>/src/assets/images/dcm-logo.png" alt="DCM Lawyers Logo">
-
 						</a>
 					</div>
 				</div>
