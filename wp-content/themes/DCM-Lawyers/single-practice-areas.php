@@ -16,8 +16,11 @@ echo '<div class="grid-container fluid practice-areas-hero" style="background-im
                 <div class="dcm-content">
                     <?php the_content(); ?>
                     <div class="dcm-btn-full">
-                        <button>TALK TO US</button>
-                    </div> 
+	        		    <a href="<?php echo get_page_link(24); ?>">
+			        	<button>TALK TO US</button>
+    			    </a>
+    	        </div>
+
                 </div>
                 
                 <?php

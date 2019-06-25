@@ -1,5 +1,8 @@
 <?php get_header(); ?>
-<div class="grid-container">
+<div class="grid-container fluid team-hero">
+    <h1><?php the_title();?></h1>
+</div>
+<div class="grid-container team-btn">
     <div class="grid-x grid-margin-x">
             <div class="cell medium-3">
                     <?php get_template_part('library/menu-team') ?>
@@ -17,7 +20,7 @@
                 <div class="dcm-content">
                     <?php the_content(); ?> 
                 </div>
-                
+
                 <?php
                 endwhile;
                 else:
@@ -37,6 +40,10 @@
                 <h4 class="name"><?php if (is_array($meta) && isset($meta['author'])){ echo $meta['author']; } ?></h4>
             </div>
         </div>
-
+        <div class="dcm-btn-full">
+	        		<a href="<?php echo get_page_link(24); ?>">
+			        	<button>TALK TO US</button>
+    			    </a>
+    	        </div>
 </div>
 <?php get_footer(); ?>

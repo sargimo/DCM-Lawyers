@@ -7,14 +7,13 @@
         margin: 0;
         li {
             padding-bottom: 5px;
-            @include mq ('tablet') {
-                text-align: center;
+            @include mq ('tablet-small') {
+                // text-align: center;
             }
         }
         a {
             color: $dcm-grey;
             text-transform: uppercase;
-        
         }
         a:hover {
             color: $dcm-black;
@@ -31,9 +30,7 @@
         font-size: 22px;
         font-family: $dcm-body-font;
         color: $dcm-secondary-colour;
-        // margin-top: 85px;
-        @include mq ('tablet') {
-            text-align: center;
+        @include mq ('tablet-small') {
             margin-top: 0;
         }
         @include mq ('navigation') {

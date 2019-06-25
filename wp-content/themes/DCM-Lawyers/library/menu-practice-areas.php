@@ -1,5 +1,5 @@
 <div class="dcm-practice-areas-menu">
-    <h3>Practice Areas</h3>
+    <h3 class="pa-menu-title">Practice Areas <i class="fas fa-caret-down"></i></h3>
     <?php
     wp_nav_menu(
                 array(

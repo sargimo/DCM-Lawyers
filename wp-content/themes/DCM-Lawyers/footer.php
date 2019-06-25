@@ -13,7 +13,7 @@
 <footer>
 	<div class="grid-container fluid dcm-footer-map">
 		<a href="https://goo.gl/maps/h61CaaP79K1wV9vp9" target="_blank">0
-			<div class="dcm-btn-full">
+			<div>
 			<button class="dcm-footer-btn">12 COLLINS STREET, MELBOURNE</button>
 			</div>
 		</a>
@@ -36,7 +36,7 @@
 	</div>
 	<div class="grid-container fluid dcm-footer-bottom">
 			<div class="grid-container dcm-footer-flex">
-				<p>Liability limited by a scheme approved under Professional Standards Legislation.</p><p class="dcm-footer-author">Copyright © <?php echo date("Y"); ?> Created by PUT SOMETHING HERE </p>
+				<p>Liability limited by a scheme approved under Professional Standards Legislation.</p><p class="dcm-footer-author">Copyright © <?php echo date("Y"); ?></p>
 			</div>
 		</div>
 </footer>

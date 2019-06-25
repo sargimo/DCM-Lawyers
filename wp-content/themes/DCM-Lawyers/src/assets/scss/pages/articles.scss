@@ -24,7 +24,7 @@
         border-right: 1px solid #fff;
         padding-right: 100px;
         margin: 0;
-        @include mq ('tablet') {
+        @include mq ('tablet-small') {
             width: 100%;
             padding: 0;
             text-align: center;
@@ -36,7 +36,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        @include mq ('tablet') {
+        @include mq ('tablet-small') {
             flex-direction: column;
         }    
     }
@@ -51,7 +51,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        @include mq ('tablet') {
+        @include mq ('tablet-small') {
             width: 100%;
             flex-direction: column;
         }    
@@ -83,7 +83,7 @@
     font-family: $dcm-body-font;
     font-size: 18px;
     padding-bottom: $dcm-section-padding;
-    @include mq ('tablet') {
+    @include mq ('tablet-small') {
         padding-bottom: $dcm-responsive-section-padding;
     }
     a {
@@ -103,7 +103,7 @@
         text-align: center !important;
         padding-bottom: $dcm-section-padding;
         font-size: 22px;
-        @include mq ('tablet') {
+        @include mq ('tablet-small') {
             padding-bottom: $dcm-responsive-section-padding;
         }
     }
@@ -150,5 +150,15 @@
         text-align: center;
         letter-spacing: $dcm-title-letter-spacing;
         padding-bottom: $dcm-section-padding;
+    }
+    .dcm-btn-full {
+        margin: 0 auto;
+        margin-top: 32px;
+        text-align: center;
+        button {
+            &:hover {
+                color: $dcm-black;
+            }
+        }
     }
 }

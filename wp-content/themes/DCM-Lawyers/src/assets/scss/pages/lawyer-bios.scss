@@ -1,10 +1,59 @@
+.team-hero {
+    height: 40vh;
+    background: url('../images/team-hero-temp.jpg');
+    background-size: cover;
+    background-position: 0% 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -100px !important;
+    background-color: #a9a9a9;
+    background-blend-mode: multiply;
+    @include mq ('phone-wide') {
+        margin-top: -58px !important;
+    }
+    h1 {
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-family: $dcm-primary-font;
+        letter-spacing: $dcm-title-letter-spacing;
+        font-size: 3.5em;
+    }
+}
+
+.team-menu {
+    @include mq ('tablet-small') {
+        display: none;
+    }
+}
+
+.team-menu.is-active {
+    display: inherit;
+}
+
+.team-btn {
+    .dcm-btn-full {
+        padding: $dcm-section-padding 0;
+        text-align: center;
+        button:hover {
+            color: $dcm-black;
+        }
+        @include mq ('tablet-wide') {
+            padding: $dcm-responsive-section-padding 0;
+        }
+    
+    } 
+}
+
 .dcm-team {
     font-family: $dcm-body-font;
     font-size: 18px;
+    padding-top: $dcm-section-padding;
     padding-right: 40px;
-    padding-bottom: $dcm-section-padding;
-    @include mq ('tablet-wide') {
-        padding-bottom: $dcm-responsive-section-padding;
+    @include mq ('tablet-small') {
+        padding-top: $dcm-responsive-section-padding;
+        padding-right: 0;
     }
     span {
         font-family: $dcm-body-font;
@@ -90,11 +139,10 @@
     padding: 40px;  
     text-align: center;
     align-self: center;
-    border-left: 1px solid #e5e5e5;
     display: none;
     @include mq ('tablet-wide') {
         display: block;
-        padding-bottom: $dcm-responsive-section-padding;
+        padding: $dcm-responsive-section-padding 10px;
     }
     .quotation-mark {
         font-family: 'Courgette', cursive;

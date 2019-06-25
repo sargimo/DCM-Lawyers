@@ -1,5 +1,5 @@
 <div class="dcm-team-menu">
-    <h3>Team</h3>
+<h3 class="pa-menu-title">Team <i class="fas fa-caret-down"></i></h3>
     <?php
     wp_nav_menu(
                 array(

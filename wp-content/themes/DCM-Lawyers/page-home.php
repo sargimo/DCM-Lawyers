@@ -5,10 +5,12 @@
         <hr class="hero-hr">
         <div class="hero-buttons">
         <div class="dcm-btn dcm-btn-one">
-            <span>WHO ARE WE?</span>
+            <span><a href="<?php echo get_page_link(20); ?>">WHO ARE WE?</span>
         </div>
         <div class="dcm-btn-full">
+        <a href="<?php echo get_page_link(24); ?>">
             <button>TALK TO US</button>
+        </a>
         </div>
         </div>
     </div>
@@ -19,10 +21,10 @@
             <h2 class="dcm-section-header">Clear Advice, Smart Strategies.</h2>
             <p>Our team works to ensure you’re never waiting for an answer. Speak to a lawyer, <span class="emphasis">every</span> time you call. We empower individuals and small organisations with clear advice and smart strategies. </p>
             <div class="dcm-btn-underline">
-                <a href="#"><button>more about us</button></a>
+                <a href="<?php echo get_page_link(20); ?>"><button>more about us</button></a>
             </div>
         </div>
-        <div class="cell medium-3 small-12">
+        <div class="cell medium-3 small-12 home-practice-areas">
             <?php get_template_part('library/menu-practice-areas') ?>
         </div>
     </div>

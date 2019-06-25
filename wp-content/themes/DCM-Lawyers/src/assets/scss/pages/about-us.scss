@@ -1,6 +1,6 @@
 .dcm-about-us {
     padding-bottom: $dcm-section-padding;
-    @include mq ('tablet') {
+    @include mq ('tablet-small') {
         padding-bottom: $dcm-responsive-section-padding;
     }
     p {
@@ -13,20 +13,27 @@
     margin-bottom: $dcm-section-padding;
     }
     .dcm-section-header {
-        @include mq ('tablet') {
-            margin-bottom: $dcm-responsive-section-padding;
+        @include mq ('tablet-small') {
+            margin: $dcm-responsive-section-padding 0;
         }
     }
     #menu-team {
-        @include mq ('tablet') {
-            text-align: center;
-            padding-bottom: $dcm-responsive-section-padding;
+        @include mq ('tablet-small') {
+            display: none;
+            // text-align: center;
+            // padding-bottom: $dcm-responsive-section-padding;
         }
     }
+    #menu-team.is-active {
+        display: inherit;
+    }
     .dcm-team-menu {
+        @include mq ('tablet-small') {
+            padding-top: 0;
+        }
         h3 {
-            @include mq ('tablet') {
-                text-align: center;
+            @include mq ('tablet-small') {
+                // text-align: center;
             }
         }
     }

@@ -18,8 +18,12 @@ get_header(); ?>
 			<?php the_title('<h1 class="dcm-title">', '</h1>'); ?>
 			<div class="dcm-content">
 				<?php the_content(); ?> 
-			</div>
-			
+			</div>	
+			<div class="dcm-btn-full">
+	        		<a href="<?php echo get_page_link(24); ?>">
+			        	<button>TALK TO US</button>
+    			    </a>
+    	        </div>		
 			<?php
 			endwhile;
 			else:

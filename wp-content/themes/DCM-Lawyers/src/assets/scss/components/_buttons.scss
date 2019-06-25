@@ -9,15 +9,21 @@
 
 .dcm-footer-btn {
   margin-top: 150px;
-  background-color: $dcm-primary-colour;
-  color: #fff;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom: 3px solid $dcm-primary-colour;
+  color: $dcm-black;
   font-family: $dcm-primary-font;
   font-size: 14px;
+  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   padding: 30px 80px;
   cursor: pointer;
   transition: all 0.3s;
+  &:hover {
+    color: $dcm-primary-colour;
+  }
   @include mq ('phone-wide') {
     padding: 30px 50px;
   }
@@ -26,204 +32,6 @@
 .dcm-footer-map .dcm-btn-full button:hover {
   color: #222;
 }
-
-
-// @mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
-//   transition: $property $duration $ease;
-// }
-
-// .dcm-btn {
-//   position: relative;
-//   display: inline-block;
-//   cursor: pointer;
-//   margin-right: 10px;
-//   outline: none;
-//   border: 0;
-//   vertical-align: middle;
-//   text-decoration: none;
-//   background: transparent;
-//   padding: 0;
-//   font-size: inherit;
-//   font-family: inherit;
-//   &.dcm-btn-grow {
-//     width: 16rem;
-//     height: auto;
-//     .square {
-//       @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
-//       position: relative;
-//       margin: 0;
-//       width: 3rem;
-//       height: 3rem;
-//       background: $dcm-primary-colour;
-//       .icon {
-//         @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
-//         position: absolute;
-//         top: 0;
-//         bottom: 0;
-//         margin: auto;
-//         background: #fff;
-//         &.arrow {
-//           @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
-//           left: 0.625rem;
-//           width: 1.125rem;
-//           height: 0.125rem;
-//           background: none;
-//           &::before {
-//             position: absolute;
-//             content: '';
-//             top: -0.25rem;
-//             right: 0.0625rem;
-//             width: 0.625rem;
-//             height: 0.625rem;
-//             border-top: 0.125rem solid #fff;
-//             border-right: 0.125rem solid #fff;
-//             transform: rotate(45deg);
-//           }
-//         }
-//       }
-//     }
-//     .button-text {
-//       @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
-//       position: absolute;
-//       top: 0;
-//       left: 0;
-//       right: 0;
-//       bottom: 0;
-//       padding: 0.75rem 0;
-//       margin: 0 0 0 1.85rem;
-//       color: #fff;
-//       line-height: 1.6;
-//       text-align: center;
-//       text-transform: uppercase;
-//     }
-//   }
-//   &:hover {
-//     .square {
-//       width: 100%;
-//       .icon {
-//         &.arrow {
-//         background: #fff;
-//         transform: translate(1rem, 0);
-//         }
-//       }
-//     }
-//     .button-text {
-//       color: #222;
-//     }
-//   }
-// }
-
-// <button class="dcm-btn dcm-btn-grow">
-//                 <div class="square">
-//                 <span class="icon arrow"></span>
-//                 </div>
-//                 <p class="button-text">WHO ARE WE?</p>
-//             </button>
-
-
-// .dcm-btn {		
-//   position: relative;	
-//   width: 250px;
-//   padding: 20px 0;
-//   text-align: center;
-// 	font-size: 14px;
-// 	color: #fff;
-// 	text-transform: uppercase;
-// 	transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);	
-// 	cursor: pointer;
-//   user-select: none;
-//   &:hover {
-//     color: #fff;
-//     transition-delay: .0s;
-//     z-index: 3;
-//   }
-//   &:before {
-//     content: '';
-//     position: absolute;	
-//     transition: inherit;
-//     color: $dcm-primary-colour;
-//     z-index: 1;
-//   }
-//   &:after {
-//     content: '';
-//     position: absolute;	
-//     transition: inherit;
-//     color: #fff;
-//     z-index: -1;
-//   }
-//   &:hover:after{
-//     // z-index: 2;
-//     background: $dcm-primary-colour;
-//   }
-// }
-
-// .from-left {
-//   &:before {
-//     top: 0;
-//     width: 0;
-//     height: 100%;  
-//   }
-//   &:after {
-//     top: 0;
-//     width: 0;
-//     height: 100%;  
-//   }
-//   &:before {
-//     right: 0;
-//     border: 1px solid #fff;
-//     border-left: 0;
-//     border-right: 0;	
-//   }
-//   &:after {
-//     left: 0;
-//   }
-//   &:hover:before {
-//     width: 100%;
-//   }
-//   &:hover:after {
-//     width: 100%;
-//   }
-// }
-
-// .dcm-btn {
-//         button {
-//           color: #fff;
-//           background: $dcm-primary-colour;
-//           border: none;
-//           -webkit-transition: all 1s ease;
-//           transition: all 1s ease;
-//           &:hover {
-//             -webkit-transition: all .7s ease;
-//             transition: all .7s ease;
-//             background: transparent;
-//             color: $dcm-primary-colour;
-//             &:after {
-//               transition: all .3s ease;
-//               width: 100% ;
-//               left: 0;
-//             }
-//           }
-//           &:after {
-//             position: absolute;
-//             transition: all .3s ease;
-//             content: '';
-//             width: 0;
-//             bottom: 0;
-//             left: inherit;
-//             right: 0;
-//             height: 3px;
-//             background: $dcm-primary-colour;
-//         }
-//       } 
-// }
-
-// .dcm-btn-line {
-//   color: $dcm-primary-colour;
-//   font-size: 60px;
-//   margin: 0;
-//   padding-bottom: 10px;
-//   margin-right: -5px;
-// }
 
 .dcm-btn-full { 
   button {
@@ -242,10 +50,12 @@
     -webkit-transition: all 1s ease;
     transition: all 1s ease; 
     font-weight: 700;
-    a {
-      text-decoration: none;
-    }  
   }
+  a {
+    padding: 10px 0;
+    text-decoration: none;
+    color: inherit;
+  }  
 }
 
 .dcm-btn-full button:hover {
@@ -253,7 +63,6 @@
   transition: all 0.7s ease;
   background: transparent;
   border: 1px solid transparent;
-  // font-size: 16px;
   color: #fff;
 }
 .dcm-btn-full button:hover:after {
@@ -273,11 +82,6 @@
   background: $dcm-primary-colour;
 }
 
-// <div class="dcm-btn">
-// <p class="btn-line">-</p>
-// <button>WHO ARE WE?</button>
-// </div>
-
 .dcm-btn {
   position: relative;
   transition: all 0.3s;
@@ -287,11 +91,16 @@
   color: #fff;
   position: relative;
   letter-spacing: $dcm-title-letter-spacing;
-  padding: 20px 50px;
+  padding: 10px 50px;
   text-transform: uppercase;
   font-family: $dcm-primary-font;
   font-size: 14px;
   font-weight: 700;
+  a {
+    text-decoration: none;
+    padding: 20px 0;
+    color: inherit;
+  }  
   span {
     transition: all 0.3s;
     transform: scale(1, 1);
@@ -347,15 +156,11 @@
     position: relative;
     letter-spacing: $dcm-title-letter-spacing;
     padding: 15px 20px;
-    // text-transform: uppercase;
     font-family: $dcm-body-font;
     align-self: flex-end;
-    // font-size: 14px;
-    // background: $dcm-primary-colour;
     border: none;
     -webkit-transition: all 1s ease;
     transition: all 1s ease; 
-    // font-weight: 700;
     a {
       text-decoration: none;
     }  
@@ -365,15 +170,14 @@
 .dcm-btn-underline button:hover {
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
-  // background: transparent;
-  // font-size: 16px;
-  // color: #fff;
 }
+
 .dcm-btn-underline button:hover:after {
   transition: all 0.6s ease;
   width: 100%;
   left: 0;
 }
+
 .dcm-btn-underline button:after {
   position: absolute;
   transition: all 0.3s ease;

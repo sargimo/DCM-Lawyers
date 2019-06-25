@@ -26,23 +26,63 @@
     margin-top: 0;
     li {
         margin-right: 16px;
+        @include mq ('tablet-small') {
+            margin-right: 0;
+        }
     }
-    @include mq ('tablet') {
-        text-align: center;
+    @include mq ('tablet-small') {
+        // text-align: center;
         padding-top: $dcm-responsive-section-padding;
+        // justify-content: center;
     }
     h3 {
-        @include mq ('tablet') {
+        @include mq ('tablet-small') {
             margin: 0;
         }
     }
+    .pa-menu-title {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        transition: all 0.3 ease;
+        @include mq('tablet-small') {
+            // text-align: center;
+            // padding-bottom: 10px;
+            // justify-content: center;
+            margin: 0;
+        }
+        i.is-active {
+            transition: all 0.3 ease;
+            transform: rotateX(180deg);
+        }
+        i {
+            transition: all 0.3 ease;
+            font-size: 18px;
+            display: none;
+            padding-left: 15px;
+            @include mq('tablet-small') {
+                display: inherit;
+            }
+        }
+    }
+}
+.practice-areas-menu {
+    transition: all 0.3 ease;
+    @include mq ('tablet-small') {
+        display: none;    
+    }
+}
+
+.practice-areas-menu.is-active {
+    padding-top: 10px;
+    display: inherit;
 }
 
 .dcm-practice-areas {
     font-family: $dcm-body-font;
     font-size: 18px;
     padding: $dcm-section-padding 0 ;
-    @include mq ('tablet') {
+    @include mq ('tablet-small') {
         padding: $dcm-responsive-section-padding 0;
     }
     span {

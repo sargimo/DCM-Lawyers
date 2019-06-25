@@ -1,9 +1,36 @@
 .dcm-team-menu {
     font-size: 14px;
     font-family: $dcm-primary-font;
-    @include mq ('tablet') {
-        text-align: center;
-        padding-bottom: $dcm-responsive-section-padding;
+    padding-top: $dcm-section-padding;
+    @include mq ('tablet-small') {
+        // text-align: center;
+        // padding-bottom: $dcm-responsive-section-padding;
+        padding-top: $dcm-responsive-section-padding;
+    }
+    .pa-menu-title {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        transition: all 0.3 ease;
+        @include mq('tablet-small') {
+            text-align: center;
+            margin: 0;
+            // padding-bottom: 10px;
+            // justify-content: center ;
+        }
+        i.is-active {
+            transition: all 0.3 ease;
+            transform: rotateX(180deg);
+        }
+        i {
+            transition: all 0.3 ease;
+            font-size: 18px;
+            display: none;
+            padding-left: 15px;
+            @include mq('tablet-small') {
+                display: inherit;
+            }
+        }
     }
     #menu-team {
         list-style : none;
@@ -11,6 +38,10 @@
         margin: 0;
         li {
             padding-bottom: 5px;
+            margin-right: 16px;
+            @include mq ('tablet-small') {
+                margin-right: 0;
+            }
         }
         a {
             color: $dcm-grey;

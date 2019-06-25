@@ -53,6 +53,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include mq ('phone') {
+      font-size: 11px;
+    }
   }
 }
 
@@ -64,7 +67,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  .dcm-btn-full {
+  .dcm-footer-btn {
     @include mq ('phone-wide') {
       padding: 20px 30px;
     }
@@ -82,7 +85,8 @@
     margin: 0;
   }
   .dcm-footer-author {
-    text-align: right;
+    text-align: center;
+    font-weight: 700;
     @include mq ('desktop') {
       text-align: center;
       padding-top: 16px;
@@ -91,6 +95,9 @@
   .dcm-footer-flex {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    font-size: 12px;
+    text-align: center;
     @include mq ('desktop') {
       flex-direction: column;
       text-align: center;

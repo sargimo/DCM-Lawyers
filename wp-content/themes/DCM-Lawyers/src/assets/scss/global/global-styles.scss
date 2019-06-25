@@ -1,3 +1,8 @@
 body {
     font-family: $dcm-primary-font;
 }
+.grid-container {
+    @include mq ('phone-wide') {
+        padding: 0 25px;
+    }
+}

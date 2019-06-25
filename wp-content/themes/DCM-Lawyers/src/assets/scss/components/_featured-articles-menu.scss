@@ -1,7 +1,7 @@
 .dcm-featured-articles-menu {
     font-size: 14px;
     font-family: $dcm-primary-font;
-    @include mq ('tablet') {
+    @include mq ('tablet-small') {
         text-align: center;
         padding-bottom: $dcm-responsive-section-padding;
     }
