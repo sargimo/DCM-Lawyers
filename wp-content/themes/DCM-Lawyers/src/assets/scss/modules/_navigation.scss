@@ -216,3 +216,10 @@
   background: $dcm-primary-colour;
   font-weight: 700;
 }
+
+.the-team-menu-title a{
+  font-family: $dcm-body-font !important;
+  font-size: 18px !important;
+  color: $dcm-secondary-colour !important;
+  text-transform: initial !important;
+}
