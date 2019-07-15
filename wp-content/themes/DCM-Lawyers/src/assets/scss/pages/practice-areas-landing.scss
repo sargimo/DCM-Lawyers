@@ -1,0 +1,48 @@
+.areas-of-practice-landing {
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(10,10,10,.1);
+    padding: .5rem 0;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 500;
+    .pa-menu-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 3em;
+        margin-bottom: 50px;
+        @include mq ('tablet') {
+            font-size: 2.5em;
+        }
+        @include mq ('phablet') {
+            font-size: 2em;
+        }
+    }
+    .dcm-practice-areas-menu #menu-practice-areas li {
+        margin: 0;
+        font-size: 2em;
+        margin-bottom: $dcm-paragraph-padding;
+        @include mq ('tablet') {
+            font-size: 1.5em;
+        }
+        @include mq ('phablet') {
+            font-size: 1em;
+        }
+    }
+    .practice-areas-menu {
+        transition: all 0.3 ease;
+        @include mq ('tablet-small') {
+            display: inherit;    
+        }
+    }
+}

@@ -6,7 +6,7 @@
         </div>
         <div class="cell small-12 medium-6 contact-text">
             <p class= "contact-item"><i class="fas fa-home"></i> <?php echo get_theme_mod('dcm-address-setting', 'Level 2, Suite 34, 12 Collins Street'); ?>, <br>Melbourne, VIC 3000</p>
-			<p class= "contact-item"><i class="fas fa-phone"></i></i> <?php echo get_theme_mod('dcm-phone-number-setting', '(03) 9670 0001'); ?></p>
+			<p class= "contact-item"><a href="tel:<?php echo get_theme_mod('dcm-phone-number-setting', '(03) 9670 0001');?>"><i class="fas fa-phone"></i><?php echo get_theme_mod('dcm-phone-number-setting', '(03) 9670 0001'); ?></a></p>
 			<p class= "contact-item"><i class="fas fa-envelope-open"></i> <?php echo get_theme_mod('dcm-email-setting', 'admin@dcmlawyers.com'); ?></p>
 			<p class= "contact-item"><i class="fas fa-clock"></i> Monday - Friday <br>9:00am - 5:00pm</p>
         </div>

@@ -50,6 +50,9 @@
     display: flex;
     padding: 10px 20px 10px 0;
   }
+  a {
+    color: inherit;
+  }
   p {
     font-family: $dcm-primary-font;
     text-align: right;

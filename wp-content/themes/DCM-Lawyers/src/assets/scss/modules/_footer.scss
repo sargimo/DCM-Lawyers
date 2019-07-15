@@ -53,6 +53,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    a {
+      color: inherit;
+    }
     @include mq ('phone') {
       font-size: 11px;
     }

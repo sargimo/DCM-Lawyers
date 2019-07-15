@@ -14,6 +14,7 @@
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://fonts.googleapis.com/css?family=Cardo|Crimson+Text|Domine|Karma|Libre+Baskerville|Montserrat|Neuton&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.css" integrity="sha256-T83uxgXXWPZaSIlVc2Y1H6ZSAZVjHyXfX4Y8qof8WKA=" crossorigin="anonymous" />	
 		<?php wp_head(); ?>
@@ -26,7 +27,7 @@
 	<header class="site-header" role="banner">
 		<div class="grid-container dcm-top-nav">
 			<p><i class="fas fa-envelope-open"></i><?php echo get_theme_mod('dcm-email-setting', 'admin@dcmlawyers.com'); ?></p>
-			<p><i class="fas fa-phone"></i><?php echo get_theme_mod('dcm-phone-number-setting', '(03) 9670 0001'); ?></p>
+			<p><a href="tel:<?php echo get_theme_mod('dcm-phone-number-setting', '(03) 9670 0001');	 ?>"><i class="fas fa-phone"></i><?php echo get_theme_mod('dcm-phone-number-setting', '(03) 9670 0001'); ?></a></p>
 		</div>	
 		<div class="grid-container">
 			<div data-hide-for="nav" data-animate="fade-in fade-out" class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle(); ?>>

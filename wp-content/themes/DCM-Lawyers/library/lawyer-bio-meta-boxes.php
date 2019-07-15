@@ -34,7 +34,7 @@ function add_your_fields_meta_box() {
 
     function save_your_fields_meta( $post_id ) {
     	// verify nonce
-    	if ( !wp_verify_nonce( $_POST['your_meta_box_nonce'], basename(_FILE_) ) ) {
+    	if ( !wp_verify_nonce( $_POST['your_meta_box_nonce'], basename(__FILE__) ) ) {
     		return $post_id;
     	}
     	// check autosave
