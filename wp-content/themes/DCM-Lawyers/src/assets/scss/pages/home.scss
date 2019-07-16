@@ -1,5 +1,6 @@
 .home-hero {
     height: 60vh;
+    min-height: 420px;
     background: url('../images/home-hero.jpg');
     background-position: center;
     background-size: cover;
@@ -156,7 +157,7 @@
     text-align: center;
     color: $dcm-black;
     margin-bottom: $dcm-section-padding;
-    transition: all 0.3 ease;
+    transition: all 0.3s ease;
     a {
         transition: all 0.3s ease;
         background-color: transparent;
@@ -168,9 +169,6 @@
             font-size: 14px;
             text-transform: uppercase;
             color: #a9a9a9;
-            &:hover {
-             color: $dcm-primary-colour;
-            }
         }
     }
     h2 {
@@ -180,6 +178,15 @@
     .dcm-home-team-item {
         font-family: $dcm-primary-font;
         padding: $dcm-paragraph-padding 0;
+        &:hover {
+            a {
+                color: $dcm-primary-colour;
+            }
+            .dcm-team-thumbnail img {
+                opacity: 0.85;
+                border: 2px solid $dcm-primary-colour;
+            }
+        }
     }
     .dcm-team-title {
         h3 {
@@ -199,10 +206,6 @@
             transition: all 0.3s ease;
             margin-bottom: $dcm-paragraph-padding;
             border: 2px solid transparent;
-            &:hover {
-                opacity: 0.85;
-                border: 2px solid $dcm-primary-colour;
-            }
         }
     }
 }

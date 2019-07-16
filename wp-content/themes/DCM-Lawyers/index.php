@@ -24,13 +24,15 @@ get_header(); ?>
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 
                 <div class="articles-item">
+                    <div class="logo">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/dcm-logo-small.png" alt="dcm logo">
+                    </div>
                     <a href="<?php the_permalink()?>">
                     
                     <?php the_title('<h1 class="dcm-title">', '</h1>'); ?> 
                     <hr class="articles-hr">
                     <div class="author">
-                        <?php echo get_avatar( get_the_author_email(), '60' ); ?> 
-                        <h4 class="articles-author"><span class="written-by">written by</span><br><?php the_author(); ?></h4>
+                        <?php the_excerpt(); ?>
                         <div class="dcm-btn-underline">
                             <button>read more</button>
                         </div>

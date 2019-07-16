@@ -8,7 +8,7 @@
     left: 0;
     width: 100vw;
     opacity: 1;
-    visibility: visible;
+    visibility: visible !important;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -40,9 +40,14 @@
         }
     }
     .practice-areas-menu {
-        transition: all 0.3 ease;
+        transition: all 0.3s ease;
         @include mq ('tablet-small') {
-            display: inherit;    
+            visibility: visible;
+            max-height: 2000px;
+            opacity: 1;    
         }
+    }
+    #menu-practice-areas {
+        visibility: visible;
     }
 }

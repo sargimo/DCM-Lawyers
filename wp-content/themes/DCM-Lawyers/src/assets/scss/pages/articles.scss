@@ -1,81 +1,108 @@
 .articles-item {
     display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 0 4px 8px -6px $dcm-black;
+    -moz-box-shadow: 0 4px 8px -6px $dcm-black;
+    box-shadow: 0 4px 8px -6px $dcm-black;
+    position: relative;
     &:nth-of-type(2n+1) {
-        background: $dcm-secondary-colour;
+        background: white;
         &:hover {
-            background: lighten($dcm-secondary-colour, 3%);
+            background: darken(#f7fbfd, 3%);
         }
     }
     &:nth-of-type(2n) {
-        background: #3a586d;
+        background: #f7fbfd;
         &:hover {
-            background: lighten(#3a586d, 3%);
+            background: darken(#f7fbfd, 3%);
         }
     }
     margin: $dcm-paragraph-padding $dcm-paragraph-padding;
     padding: 40px;
+    overflow: hidden;
+    img {
+        z-index: 2;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        opacity: 0.05;
+        transform: rotate(-45deg);
+        height: 100%;
+        @include mq ('tablet-small') {
+            visibility: hidden;
+        }
+    }
     .dcm-title {
         text-transform: uppercase;
         font-size: 22px;
-        color: #fff;
+        color: $dcm-black;
         text-align: left;
         letter-spacing: $dcm-title-letter-spacing;
-        width: 50%;
-        border-right: 1px solid #fff;
-        padding-right: 100px;
+        z-index: 3;
+        // width: 50%;
+        padding-bottom: 30px;
+        border-bottom: 1px solid $dcm-secondary-colour;
+        // padding-right: 50px;
         margin: 0;
-        @include mq ('tablet-small') {
-            width: 100%;
-            padding: 0;
-            text-align: center;
-            border: none;
-        }    
+        // @include mq ('tablet-small') {
+        //     width: 100%;
+        //     padding: 0;
+        //     text-align: center;
+        //     border: none;
+        // }    
     }
     a {
         width: 100%;
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        // align-items: center;
         justify-content: center;
-        @include mq ('tablet-small') {
-            flex-direction: column;
-        }    
+        z-index: 3;
+        // @include mq ('tablet-small') {
+        //     flex-direction: column;
+        // }    
     }
     p{
-        padding-top: $dcm-paragraph-padding;
+        // padding-top: $dcm-paragraph-padding;
+        // padding-left: 20px;
         font-size: 18px;
         font-family: $dcm-body-font;
-        color: #fff;
+        color: $dcm-black;
+        margin: 0;
+        z-index: 3;
     }
     .author {
-        width: 50%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        // width: 50%;
+        // display: flex;
+        // justify-content: space-around;
+        // align-items: center;
         @include mq ('tablet-small') {
             width: 100%;
             flex-direction: column;
+            z-index: 3;
         }    
         img {
             border-radius: 50%;
         }
-        .articles-author {
-            color: #fff;
-            text-transform: uppercase;
-            font-weight: 700;
-            font-size: 16px;
-            margin: 0;
-            // margin-left: 20px;
-        }
-        .written-by {
-            font-family: $dcm-body-font;
-            font-size: 12px;
-            color: #fff;
-            text-transform: lowercase;
-        }
+        // .articles-author {
+        //     color: #fff;
+        //     text-transform: uppercase;
+        //     font-weight: 700;
+        //     font-size: 16px;
+        //     margin: 0;
+        //     // margin-left: 20px;
+        // }
+        // .written-by {
+        //     font-family: $dcm-body-font;
+        //     font-size: 12px;
+        //     color: #fff;
+        //     text-transform: lowercase;
+        // }
     }
     .dcm-btn-underline {
         padding-top: $dcm-paragraph-padding;
-        justify-content: center;
+        justify-content: flex-end;
+        z-index: 2;
     }
 }
 
@@ -88,7 +115,7 @@
     }
     a {
         text-decoration: none;
-        color: $dcm-black;
+        color: inherit;
     }
 
     .articles-title {
@@ -112,7 +139,11 @@
 .dcm-articles {
     font-family: $dcm-body-font;
     font-size: 18px;
+    padding-left: 40px;
     padding-bottom: $dcm-section-padding;
+    @include mq ('tablet-small') {
+        padding-left: 0;
+    }
     span {
         font-family: $dcm-body-font;
         font-size: 18px;

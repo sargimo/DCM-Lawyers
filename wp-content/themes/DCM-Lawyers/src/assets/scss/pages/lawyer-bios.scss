@@ -1,5 +1,6 @@
 .team-hero {
     height: 40vh;
+    min-height: 320px;
     background: url('../images/team-hero-temp.jpg');
     background-size: cover;
     background-position: 0% 20%;
@@ -23,13 +24,19 @@
 }
 
 .team-menu {
+    transition: all 0.7s ease;
     @include mq ('tablet-small') {
-        display: none;
+        visibility: hidden;
+        max-height: 0px; 
+        opacity: 0;
     }
 }
 
 .team-menu.is-active {
-    display: inherit;
+    transition: all 0.7s ease;
+    visibility: visible;
+    max-height: 600px;
+    opacity: 1;
 }
 
 .team-btn {

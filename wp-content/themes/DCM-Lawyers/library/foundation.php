@@ -312,7 +312,7 @@ if ( ! function_exists( 'foundationpress_gallery' ) ) :
 				$link = wp_get_attachment_link($id, $size_class, false, false, false,array('class' => '', 'id' => "imageid-$id"));
 
 				// Edit this line to implement your html params in <a> tag with use a custom lightbox plugin.
-				$link = str_replace('<a href', '<a class="thumbnail fp-gallery-lightbox" data-gall="fp-gallery-'. $post->ID .'" data-title="'. wptexturize($attachment->post_excerpt) .'" title="'. wptexturize($attachment->post_excerpt) .'" href', $link);
+				$link = str_replace('<a href', '<a class="thumbnail fp-gallery-lightbox" data-gall="fp-gallery-'. $post->ID .'" data-title="'. wptexturize($attachment->post_) .'" title="'. wptexturize($attachment->post_excerpt) .'" href', $link);
 
 			} elseif ( isset($attr['link']) && $attr['link'] == 'none' ){
 				$link = wp_get_attachment_image($id,$size_class,false, array('class' => "thumbnail attachment-$size_class size-$size_class", 'id' => "imageid-$id"));

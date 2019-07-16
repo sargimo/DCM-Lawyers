@@ -7,9 +7,6 @@
         margin: 0;
         li {
             padding-bottom: 5px;
-            @include mq ('tablet-small') {
-                // text-align: center;
-            }
         }
         a {
             color: $dcm-grey;

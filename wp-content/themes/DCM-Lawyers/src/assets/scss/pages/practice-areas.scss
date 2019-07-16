@@ -1,5 +1,6 @@
 .practice-areas-hero {
     height: 40vh;
+    min-height: 420px;
     background-size: cover;
     background-position: 0% 20%;
     display: flex;
@@ -12,7 +13,7 @@
         margin-top: -58px !important;
     }
     h1 {
-        width: 100%;
+        width: 100vw;
         text-align: center;
         color: #fff;
         font-family: $dcm-primary-font;
@@ -24,6 +25,8 @@
 .dcm-practice-areas-menu{
     padding-top: $dcm-section-padding;
     margin-top: 0;
+    // transition: all 0.7s ease;
+    // max-height: 1000px;
     li {
         margin-right: 16px;
         @include mq ('tablet-small') {
@@ -44,7 +47,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        transition: all 0.3 ease;
+        transition: all 0.3s ease;
         @include mq('tablet-small') {
             // text-align: center;
             // padding-bottom: 10px;
@@ -52,11 +55,11 @@
             margin: 0;
         }
         i.is-active {
-            transition: all 0.3 ease;
+            transition: all 0.7ss ease;
             transform: rotateX(180deg);
         }
         i {
-            transition: all 0.3 ease;
+            transition: all 0.7s ease;
             font-size: 18px;
             display: none;
             padding-left: 15px;
@@ -67,15 +70,21 @@
     }
 }
 .practice-areas-menu {
-    transition: all 0.3 ease;
+    transition: all 0.7s ease;
+    max-height: 600px;
     @include mq ('tablet-small') {
-        display: none;    
+        visibility: hidden;
+        max-height: 0px; 
+        opacity: 0;
     }
 }
 
 .practice-areas-menu.is-active {
+    transition: all 0.7s ease;   
     padding-top: 10px;
-    display: inherit;
+    visibility: visible;
+    max-height: 500px;
+    opacity: 1;
 }
 
 .dcm-practice-areas {
